@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+backend/data/truestate_assignment_dataset.csv
+# or, if you might have more csvs:
+backend/data/*.csv

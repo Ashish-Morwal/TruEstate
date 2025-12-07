@@ -1,0 +1,23 @@
+{
+  "name": "truestate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Full-stack sales dashboard application with React frontend and Express backend",
+  "scripts": {
+    "dev": "npm run dev --workspace=backend",
+    "dev:all": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "start": "npm run start --workspace=backend",
+    "check": "tsc --noEmit",
+    "db:push": "npm run db:push --workspace=backend",
+    "seed": "npm run seed --workspace=backend",
+    "install-deps": "npm install && npm install --workspace=backend && npm install --workspace=frontend"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
